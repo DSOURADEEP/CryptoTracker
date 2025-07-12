@@ -11,20 +11,5 @@
       "src": "/(.*)",
       "dest": "wsgi.py"
     }
-  ],
-  "env": {
-    "FLASK_ENV": "production",
-    "PYTHONPATH": "/var/task"
-  },
-  "headers": [
-    {
-      "source": "/api/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "s-maxage=60, stale-while-revalidate"
-        }
-      ]
-    }
   ]
 }
