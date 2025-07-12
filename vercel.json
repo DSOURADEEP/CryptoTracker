@@ -16,11 +16,6 @@
     "FLASK_ENV": "production",
     "PYTHONPATH": "/var/task"
   },
-  "functions": {
-    "wsgi.py": {
-      "maxDuration": 30
-    }
-  },
   "headers": [
     {
       "source": "/api/(.*)",
